@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">sub1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="loginDescription">icLogin</string>
+    <string name="tvRidoStory">Hello Welcome to Rido Story</string>
+    <string name="tvLogin">Login</string>
+    <string name="cvEmail">Email</string>
+    <string name="cvPassword">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="checkboxLogin">Show Password</string>
+    <string name="btnRegister">Register</string>
+    <string name="tvOr">or</string>
+    <string name="alreadyRegistered">Email Already Registered</string>
+    <string name="emptyName">Name cannot be empty</string>
+    <string name="invalidEmailFormat">Invalid email format</string>
+    <string name="mustMoreThanEightCharacter">Password must be at least 8 characters long</string>
+    <string name="passwordCannotbeEmpty">Confirm Password cannot be empty</string>
+    <string name="enterDataCorectly">Please enter your data correctly</string>
+    <string name="passwordMissMatch">Passwords do not match.</string>
+    <string name="description">Description</string>
+    <string name="uploaded_photo">Uploaded Photo</string>
+    <string name="detail_title">%1$s\'s Story</string>
+    <string name="email_already_registered">Email Already Registered</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="add_your_story">Add Your Story</string>
+    <string name="upload">Upload</string>
+    <string name="photo_stories">Photo Stories</string>
+    <string name="author">Author</string>
+    <string name="upload_story">Upload Story</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="icregister">icRegister</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_your_account">Create your accunt</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="show_password">Show Password</string>
+    <string name="story_photo">Story Photo</string>
+    <string name="logout">Logout</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+</resources>

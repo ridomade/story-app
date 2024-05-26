@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iconLogin"
+        android:layout_width="114dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@string/loginDescription"
+        android:src="@drawable/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLoginDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/tvRidoStory"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/iconLogin"
+        app:layout_constraintStart_toStartOf="@+id/iconLogin"
+        app:layout_constraintTop_toBottomOf="@+id/iconLogin" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/tvLogin"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/tvLoginDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoginDescription" />
+
+    <com.dicoding.sub1.customview.CustomEmailView
+        android:id="@+id/CVEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/cvEmail"
+        app:layout_constraintEnd_toEndOf="@+id/tvLoginDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvLoginDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+    <com.dicoding.sub1.customview.CustomPasswordView
+        android:id="@+id/CVPasswordLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/cvPassword"
+        app:layout_constraintEnd_toEndOf="@+id/tvLoginDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvLoginDescription"
+        app:layout_constraintTop_toBottomOf="@+id/CVEmail" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnLogin"
+        app:layout_constraintEnd_toEndOf="@+id/CVPasswordLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CVPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/showPassword" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:indeterminate="true"
+        android:visibility="visible"
+        android:indeterminateTint="#FFFFFF"
+        android:indeterminateTintMode="src_in"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin" />
+
+    <CheckBox
+        android:id="@+id/showPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkboxLogin"
+        app:layout_constraintStart_toStartOf="@+id/CVPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/CVPasswordLogin" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="@string/btnRegister"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tvOr" />
+
+
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvOr"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

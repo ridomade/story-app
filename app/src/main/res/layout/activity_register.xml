@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/icRegistration"
+        android:layout_width="97dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/icregister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/tvSingUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/icRegistration"
+        app:layout_constraintStart_toStartOf="@+id/icRegistration"
+        app:layout_constraintTop_toBottomOf="@+id/icRegistration" />
+
+    <TextView
+        android:id="@+id/tvCreatYourAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/create_your_account"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSingUp"
+        app:layout_constraintStart_toStartOf="@+id/tvSingUp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSingUp" />
+
+    <com.dicoding.sub1.customview.CustomNameView
+        android:id="@+id/cvName"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="@+id/tvCreatYourAccount"
+        app:layout_constraintStart_toStartOf="@+id/tvCreatYourAccount"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreatYourAccount" />
+
+    <com.dicoding.sub1.customview.CustomEmailView
+        android:id="@+id/cvEmail"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="@+id/tvCreatYourAccount"
+        app:layout_constraintStart_toStartOf="@+id/tvCreatYourAccount"
+        app:layout_constraintTop_toBottomOf="@+id/cvName" />
+
+    <com.dicoding.sub1.customview.CustomPasswordView
+        android:id="@+id/cvPassword"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="@+id/tvCreatYourAccount"
+        app:layout_constraintStart_toStartOf="@+id/tvCreatYourAccount"
+        app:layout_constraintTop_toBottomOf="@+id/cvEmail" />
+
+    <com.dicoding.sub1.customview.CustomSamePasswordView
+        android:id="@+id/cvConfirmPassword"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/confirm_password"
+        app:layout_constraintEnd_toEndOf="@+id/tvCreatYourAccount"
+        app:layout_constraintStart_toStartOf="@+id/tvCreatYourAccount"
+        app:layout_constraintTop_toBottomOf="@+id/cvPassword" />
+
+    <CheckBox
+        android:id="@+id/showPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_password"
+        app:layout_constraintStart_toStartOf="@+id/cvConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/cvConfirmPassword" />
+
+    <Button
+        android:id="@+id/btnRegistAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/sign_up_text"
+        app:layout_constraintEnd_toEndOf="@+id/tvCreatYourAccount"
+        app:layout_constraintStart_toStartOf="@+id/tvCreatYourAccount"
+        app:layout_constraintTop_toBottomOf="@+id/showPassword" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBarStyle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegistAccount"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/btnRegistAccount"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistAccount">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/already_have_an_account"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
